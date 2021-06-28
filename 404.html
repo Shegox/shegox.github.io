@@ -1,5 +1,12 @@
 <head>
-  <meta http-equiv="refresh" content="5; URL=https://developers.sap.com/open-source.html" />
+  <script>
+    // Redirect for sap.github.io/chevrotin to the dedicated chevrotin.io page
+    if (window.location.href.startsWith("https://shegox.github.io/chevrotin")) {
+      // replace first occurrence of chevrotin with docs
+      pathname = window.location.pathname.replace("chevrotin", "docs")
+      window.location.replace("https://chevrotain.io" + "/" + pathname + window.location.search);
+    }
+  </script>
 </head>
 <body>
   <p>If you are not redirected in five seconds, please navigate manually to <a href="https://developers.sap.com/open-source.html">https://developers.sap.com/open-source.html</a>.</p>

@@ -6,11 +6,11 @@
 
       // custom path mappings
 
-      if (window.location.startsWith("https://shegox.github.io/chevrotin/performance")) {
+      if (window.location.href.startsWith("https://shegox.github.io/chevrotin/performance")) {
         pathname = pathname.replace("chevrotin/performance", "performance")
-      } else if (window.location.startsWith("https://shegox.github.io/chevrotin/playground")) {
+      } else if (window.location.href.startsWith("https://shegox.github.io/chevrotin/playground")) {
         pathname = pathname.replace("chevrotin/playground", "playground")
-      } else if (window.location.startsWith("https://shegox.github.io/chevrotin/docs")) {
+      } else if (window.location.href.startsWith("https://shegox.github.io/chevrotin/docs")) {
         pathname = pathname.replace("chevrotin/docs", "docs")
       } else {
         pathname = ""

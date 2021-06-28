@@ -1,6 +1,8 @@
 <head>
+  <meta http-equiv="refresh" content="5; URL=https://developers.sap.com/open-source.html" />
+
   <script>
-    // Redirect for sap.github.io/chevrotin to the dedicated chevrotin.io page
+    // Redirect for sap.github.io/chevrotin to the dedicated chevrotin.io page  
     if (window.location.href.startsWith("https://shegox.github.io/chevrotin")) {
       pathname = window.location.pathname
 
@@ -13,11 +15,11 @@
       } else if (window.location.href.startsWith("https://shegox.github.io/chevrotin/docs")) {
         pathname = pathname.replace("chevrotin/docs", "docs")
       } else {
-        pathname = ""
+        pathname = "/"
       }
 
 
-      window.location.replace("https://chevrotain.io" + "/" + pathname + window.location.search);
+      window.location.replace("https://chevrotain.io" + pathname + window.location.search);
     }
   </script>
 </head>
